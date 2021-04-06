@@ -1,0 +1,29 @@
+
+<mat-sidenav-container class="sidenav-container h-100" autosize>
+
+    <mat-sidenav #sidenav opened="true" mode="side" class="sidenav">
+
+        <mat-nav-list>
+            <mat-list-item>
+                <span class="w-100">Group 1</span>
+                <mat-icon class="menu-button" [ngClass]="{'rotated' : true}">expand_more</mat-icon>
+            </mat-list-item>
+
+            <div class="submenu" [ngClass]="{'expanded': true}">
+               <mat-list-item>Camera 1</mat-list-item>
+            </div>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <video src=""></video>
+                </div>
+                <div class="col">
+                    <video src=""></video>
+                </div>
+            </div>
+        </div>
+</mat-sidenav-container>
